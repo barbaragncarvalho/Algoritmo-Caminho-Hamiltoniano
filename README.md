@@ -10,6 +10,13 @@ Ter o Python 3 instalado. Especificamente, este projeto foi desenvolvido na vers
 ### Passos:
 • Faça o download ou clone este repositório.
 
+• Instale as bibliotecas:
+
+```
+pip install networkx
+pip install matplotlib
+```
+
 • Abra o terminal ou prompt de comando e navegue até a pasta onde você salvou os arquivos.
 
 • Execute o programa com o seguinte comando:
