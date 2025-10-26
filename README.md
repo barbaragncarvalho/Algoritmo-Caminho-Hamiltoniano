@@ -114,4 +114,10 @@ O algoritmo consiste em utilizar uma técnica de **backtracking**, que é uma ab
 2. Isto se justifica, porque ele serve para resolver relações de recorrência de algoritmos de Divisão e Conquista. E este, é um algoritmo de busca (diminuir para conquistar), o que foge da fórmula do teorema mestre.
 
 ### Análise dos casos de complexidade
-1. 
+1. Pior Caso (O(V*V!)): representa o maior tempo possível que o algoritmo pode levar. Ele ocorre ou quando o grafo não possui um Caminho Hamiltoniano, e o algoritmo é forçado a explorar todas as permutações de vértices apenas para concluir que nenhuma delas forma um caminho válido; ou quando grafo é completo (todos os vértices ligados a todos), pois isso maximiza o número de vizinhos em cada etapa da recursão, em que a ordenação do grafo faz com que ele seja o último a ser testado.
+
+   Caso Médio: representa o desempenho esperado para um grafo aleatório. Para a maioria dos grafos, o desempenho é fatorial, pois o algoritmo provavelmente terá que explorar muitas ramificações da árvore de         busca antes de encontrar uma solução ou de provar que nenhuma existe.
+   
+   Melhor Caso (O(V)): representa o menor tempo possível que o algoritmo pode levar. Ele ocorre quando o algoritmo encontra a solução na primeira tentativa, sem precisar fazer backtrack (voltar atrás).
+
+2. O desempenho é quase sempre muito mais próximo do pior caso do que do melhor caso, a menos que o grafo tenha uma estrutura muito simples. No pior caso, o impacto é muito ruim, pois o tempo fatorial torna o algoritmo completamente inviável para grafos que não sejam muito pequenos. Mas, no melhor caso, o impacto é ótimo, pois é linear.
