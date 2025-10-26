@@ -16,6 +16,12 @@ Ter o Python 3 instalado. Especificamente, este projeto foi desenvolvido na vers
 
 ```python main.py```
 
+Ao executar `main.py`, o script irá:
+• Definir um grafo de exemplo.
+• Tentar encontrar um Caminho Hamiltoniano.
+• Imprimir o resultado no console.
+• Gerar um arquivo de imagem (ex: `caminho_hamiltoniano.png`) na pasta do projeto, mostrando o grafo e o caminho destacado em vermelho.
+
 ## Lógica do algoritmo
 O algoritmo consiste em utilizar uma técnica de **backtracking**, que é uma abordagem de força bruta otimizada. Ela explora recursivamente todos os caminhos possíveis a partir de um nó inicial, voltando atrás (backtrack) assim que percebe que um caminho não levará a uma solução.
 
@@ -86,3 +92,9 @@ O algoritmo consiste em utilizar uma técnica de **backtracking**, que é uma ab
     print("Nenhum Caminho Hamiltoniano encontrado.")
         return None
     ```
+
+## Relatório técnico
+### Análise da complexidade computacional
+1. O problema do Caminho Hamiltoniano se enquadra na classe NP-Completo, pois ele é difícil de achar o caminho hamiltoniano, mas fácil de verificar, dado um caminho pronto, se ele é hamiltoniano (NP). Também, é NP-Difícil, pois um problema já conhecido como NP-Completo, como o 3-SAT, pode ser reduzido a ele (ou seja, é pelo menos tão difícil quanto encontrar caminho hamiltoniano). Portanto, se enquadra em NP-Completo.
+
+2. Além do já dito, se relaciona ao Problema do Caixeiro Viajante, pois se soubesse resolver o problema do Caixeiro Viajante (encontrar o caminho mais curto), automaticamente saberia resolver o Caminho Hamiltoniano. Isso mostra que o Caixeiro Viajante é pelo menos tão difícil quanto o Caminho Hamiltoniano, pertencendo à mesma classe.
