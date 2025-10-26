@@ -17,9 +17,13 @@ Ter o Python 3 instalado. Especificamente, este projeto foi desenvolvido na vers
 ```python main.py```
 
 Ao executar `main.py`, o script irá:
+
 • Definir um grafo de exemplo.
+
 • Tentar encontrar um Caminho Hamiltoniano.
+
 • Imprimir o resultado no console.
+
 • Gerar um arquivo de imagem (ex: `caminho_hamiltoniano.png`) na pasta do projeto, mostrando o grafo e o caminho destacado em vermelho.
 
 ## Lógica do algoritmo
