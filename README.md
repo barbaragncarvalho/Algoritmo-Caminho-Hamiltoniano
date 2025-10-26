@@ -1,9 +1,10 @@
 # Algoritmo-Caminho-Hamiltoniano
 ## Sobre o projeto
-Este projeto consiste na implementação do algoritmo para encontrar um Caminho Hamiltoniano em um grafo orientado ou não orientado.
-Como executar o projeto
+Este projeto consiste na implementação do algoritmo para encontrar um Caminho Hamiltoniano em um grafo orientado ou não orientado. A abordagem utilizada é o **backtracking**. O projeto também inclui uma visualização do grafo e do caminho encontrado, utilizando as bibliotecas `networkx` e `matplotlib`.
 
-## Pré-requisitos:
+## Como executar o projeto
+
+### Pré-requisitos:
 Ter o Python 3 instalado. Especificamente, este projeto foi desenvolvido na versão 3.10.11 do Python.
 
 ### Passos:
