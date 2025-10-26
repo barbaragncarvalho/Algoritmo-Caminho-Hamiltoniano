@@ -102,3 +102,16 @@ O algoritmo consiste em utilizar uma técnica de **backtracking**, que é uma ab
 1. O problema do Caminho Hamiltoniano se enquadra na classe NP-Completo, pois ele é difícil de achar o caminho hamiltoniano, mas fácil de verificar, dado um caminho pronto, se ele é hamiltoniano (NP). Também, é NP-Difícil, pois um problema já conhecido como NP-Completo, como o 3-SAT, pode ser reduzido a ele (ou seja, é pelo menos tão difícil quanto encontrar caminho hamiltoniano). Portanto, se enquadra em NP-Completo.
 
 2. Além do já dito, se relaciona ao Problema do Caixeiro Viajante, pois se soubesse resolver o problema do Caixeiro Viajante (encontrar o caminho mais curto), automaticamente saberia resolver o Caminho Hamiltoniano. Isso mostra que o Caixeiro Viajante é pelo menos tão difícil quanto o Caminho Hamiltoniano, pertencendo à mesma classe.
+
+### Análise da complexidade assintótica de tempo
+1. A complexidade temporal deste algoritmo é fatorial (O(V*V!)).
+   
+2. Isto se justifica, porque, no pior caso (grafo completo ou um grafo que não tem solução), o algoritmo é forçado a tentar explorar todas as permutações (todas as ordens possíveis) dos V vértices para encontrar um caminho, e há V fatorial permutações. Isso, multiplicado pelo V, que é o trabalho de verificar os vizinhos em cada etapa ou do loop inicial que tenta começar de cada vértice. Assim, o método utilizado para determinar essa complexidade foi a análise da árvore de recursão.
+
+### Aplicação do Teorema Mestre
+1. Não é possível aplicar o Teorema Mestre ao algoritmo.
+   
+2. Isto se justifica, porque ele serve para resolver relações de recorrência de algoritmos de Divisão e Conquista. E este, é um algoritmo de busca (diminuir para conquistar), o que foge da fórmula do teorema mestre.
+
+### Análise dos casos de complexidade
+1. 
