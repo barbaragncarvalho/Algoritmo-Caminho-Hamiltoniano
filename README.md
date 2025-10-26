@@ -128,3 +128,10 @@ O algoritmo consiste em utilizar uma técnica de **backtracking**, que é uma ab
    Melhor Caso (O(V)): representa o menor tempo possível que o algoritmo pode levar. Ele ocorre quando o algoritmo encontra a solução na primeira tentativa, sem precisar fazer backtrack (voltar atrás).
 
 2. O desempenho é quase sempre muito mais próximo do pior caso do que do melhor caso, a menos que o grafo tenha uma estrutura muito simples. No pior caso, o impacto é muito ruim, pois o tempo fatorial torna o algoritmo completamente inviável para grafos que não sejam muito pequenos. Mas, no melhor caso, o impacto é ótimo, pois é linear.
+
+## Visualização dos grafos
+Grafo com caminho hamiltoniano encontrado:
+![grafo caminho hamiltoniano](assets/caminho_hamiltoniano.png)
+
+Grafo sem caminho hamiltoniano:
+![grafo sem caminho hamiltoniano](assets/grafo_sem_caminho_2.png)
